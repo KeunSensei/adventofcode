@@ -46,17 +46,18 @@ $totalvalue = 0;
 
 foreach($array_column_one as $ar_key => $ar_val_one){
     //Solution for part one:
+        
     // $ar_val_two = $array_column_two[$ar_key];
     // $sum_one = abs($ar_val_one - $ar_val_two);
 
     //Solution for part two:
-    // if(!empty($array2count[$ar_val_one])){
-    //     $ar_val_two = $array2count[$ar_val_one];
-    // }else{
-    //     $ar_val_two = 0;
-    // }
-    // $sum_one = $ar_val_one * $ar_val_two;
-    // $totalvalue = $totalvalue+$sum_one;
+    if(!empty($array2count[$ar_val_one])){
+        $ar_val_two = $array2count[$ar_val_one];
+    }else{
+        $ar_val_two = 0;
+    }
+    $sum_one = $ar_val_one * $ar_val_two;
+    $totalvalue = $totalvalue+$sum_one;
 
     // echo "line <br>";
     // var_dump($ar_val_one);
